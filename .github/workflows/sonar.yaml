@@ -13,13 +13,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Desabilita o clone raso para maior relevância na análise
+          fetch-depth: 0 # Para análise completa no SonarCloud
 
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
           java-version: 17
-          distribution: "zulu" # Distribuições alternativas podem ser usadas aqui
+          distribution: "zulu"
 
       - name: Cache SonarQube packages
         uses: actions/cache@v4
@@ -28,25 +28,24 @@ jobs:
           key: ${{ runner.os }}-sonar
           restore-keys: ${{ runner.os }}-sonar
 
-      - name: Cache SonarQube scanner
-        id: cache-sonar-scanner
-        uses: actions/cache@v4
-        with:
-          path: .\.sonar\scanner
-          key: ${{ runner.os }}-sonar-scanner
-          restore-keys: ${{ runner.os }}-sonar-scanner
+      - name: Install SonarScanner for .NET
+        run: dotnet tool install --global dotnet-sonarscanner
 
-      - name: Install SonarQube scanner
-        if: steps.cache-sonar-scanner.outputs.cache-hit != 'true'
-        shell: powershell
+      - name: Add .NET tools to PATH
+        run: echo "$env:USERPROFILE\.dotnet\tools" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8
+
+      - name: Check Sonar token
         run: |
-          # Instalação do scanner usando .NET CLI (globalmente)
-          dotnet tool install --global dotnet-sonarscanner
+          if ("${{ secrets.SONAR_TOKEN }}" -eq "") {
+            Write-Error "SONAR_TOKEN is not set"
+            exit 1
+          } else {
+            Write-Host "SONAR_TOKEN is set"
+          }
 
       - name: Build and analyze
-        shell: powershell
+        shell: pwsh
         run: |
-          # Usando o scanner instalado globalmente com dotnet CLI
-          dotnet sonarscanner begin /k:"dotnet_core9" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.organization="IntexBank" /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
+          dotnet sonarscanner begin /k:"todo_dotnet_core9" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.organization="IntexBank" /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
           dotnet build
           dotnet sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"

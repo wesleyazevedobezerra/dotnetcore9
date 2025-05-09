@@ -9,8 +9,8 @@ namespace todo_dotnet_core9.Applications.Models
     public class TaskViewModel
     {
         public int Id { get; set; }
-        public string Titulo { get; set; } 
-        public string Descricao { get; set; }
+        public required string Titulo { get; set; } 
+        public  string Descricao { get; set; }
 
         public int Status { get; set; }
     }
