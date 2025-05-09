@@ -46,6 +46,6 @@ jobs:
       - name: Build and analyze
         shell: pwsh
         run: |
-          dotnet sonarscanner begin /k:"todo_dotnet_core9" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.organization="IntexBank" /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
+          dotnet sonarscanner begin /k:"todo_dotnet_core9" /o:"IntexBank" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
           dotnet build
           dotnet sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
