@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/todo_dotnet_core9.Api.props" />
+</Project>

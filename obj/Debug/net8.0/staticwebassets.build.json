@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "HhLWsp/0XF/1qY7qCgB87e1KpCRtQSiA5W88OMBSk6s=",
+  "Source": "todo-dotnet-core9",
+  "BasePath": "_content/todo-dotnet-core9",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

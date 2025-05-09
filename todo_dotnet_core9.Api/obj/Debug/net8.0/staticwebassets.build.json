@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "LGJus6QC51M/qgyo/IC9ZDAwfBTTsy7uBCl2CW4LFWQ=",
+  "Source": "todo_dotnet_core9.Api",
+  "BasePath": "_content/todo_dotnet_core9.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
