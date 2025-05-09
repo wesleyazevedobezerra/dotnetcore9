@@ -11,7 +11,7 @@ using todo_dotnet_core9.Infra.Repositories;
 
 namespace todo_dotnet_core9.Infra.Bootstraper
 {
-    public class NativeInjectorBootstrapper
+    public static class NativeInjectorBootstrapper
     {
         public static void RegisterServices(IServiceCollection services)
         {
