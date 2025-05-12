@@ -9,14 +9,14 @@ var configuration = builder.Configuration;
 
 
 
-// Configuração de CORS
+// Configuraï¿½ï¿½o de CORS
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", builder =>
     {
         builder.AllowAnyOrigin() // Permite qualquer origem
-               .AllowAnyHeader() // Permite qualquer cabeçalho
-               .AllowAnyMethod(); // Permite qualquer método (GET, POST, etc.)
+               .AllowAnyHeader() // Permite qualquer cabeï¿½alho
+               .AllowAnyMethod(); // Permite qualquer mï¿½todo (GET, POST, etc.)
     });
 });
 
@@ -50,4 +50,4 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.Run();
+await app.RunAsync();

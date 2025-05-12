@@ -193,3 +193,4 @@ C:/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet_
 /mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python_PHP/todo_dotnet_core9/todo_dotnet_core9.Api/obj/Debug/net8.0/todo_dotnet_core9.Api.pdb
 /mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python_PHP/todo_dotnet_core9/todo_dotnet_core9.Api/obj/Debug/net8.0/todo_dotnet_core9.Api.genruntimeconfig.cache
 /mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python_PHP/todo_dotnet_core9/todo_dotnet_core9.Api/obj/Debug/net8.0/ref/todo_dotnet_core9.Api.dll
+/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python_PHP/todo_dotnet_core9/todo_dotnet_core9.Api/obj/Debug/net8.0/todo_dotnet_core9.Api.sourcelink.json

@@ -55,3 +55,4 @@ C:/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet_
 /mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python_PHP/todo_dotnet_core9/todo_dotnet_core9.Infra/obj/Debug/net8.0/todo_dotnet_core9.Infra.pdb
 /mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python_PHP/todo_dotnet_core9/todo_dotnet_core9.Infra/obj/Debug/net8.0/todo_dotnet_core9.Infra.genruntimeconfig.cache
 /mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python_PHP/todo_dotnet_core9/todo_dotnet_core9.Infra/obj/Debug/net8.0/ref/todo_dotnet_core9.Infra.dll
+/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python_PHP/todo_dotnet_core9/todo_dotnet_core9.Infra/obj/Debug/net8.0/todo_dotnet_core9.Infra.sourcelink.json
