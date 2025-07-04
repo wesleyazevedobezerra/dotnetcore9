@@ -38,8 +38,13 @@ jobs:
         run: |
           dotnet test todo_dotnet_core9.Applications.Tests \
             /p:CollectCoverage=true \
-            /p:CoverletOutput=Coverage/coverage.xml \
+            /p:CoverletOutput=./Coverage/coverage.xml \
             /p:CoverletOutputFormat=opencover
+
+      - name: Check Coverage Output
+        run: |
+          ls -la Coverage || echo "Coverage directory not found"
+          head -20 Coverage/coverage.xml || echo "coverage.xml not found"
 
       - name: List coverage files
         run: |
