@@ -12,15 +12,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-      - name: Setup .NET
+      - name: Setup .NET SDK
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: 8.0.x
 
-      - name: Install SonarScanner
+      - name: Install SonarScanner tool
         run: dotnet tool install --global dotnet-sonarscanner
+
+      - name: Add dotnet tools to PATH
+        run: echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
 
       - name: Begin SonarCloud analysis
         run: |
@@ -31,25 +35,21 @@ jobs:
             /d:sonar.host.url="https://sonarcloud.io" \
             /d:sonar.cs.opencover.reportsPaths="Coverage/coverage.xml"
 
-      - name: Build
+      - name: Build solution
         run: dotnet build --no-incremental
 
-      - name: Test with coverage
-        run: |
-          dotnet test todo_dotnet_core9.Applications.Tests \
-            /p:CollectCoverage=true \
-            /p:CoverletOutput=./Coverage/coverage.xml \
-            /p:CoverletOutputFormat=opencover
+      - name: Run tests and collect coverage
+        run: dotnet test todo_dotnet_core9.Applications.Tests --collect:"XPlat Code Coverage"
 
-      - name: Check Coverage Output
+      - name: Copy coverage report to Coverage folder
         run: |
-          ls -la Coverage || echo "Coverage directory not found"
-          head -20 Coverage/coverage.xml || echo "coverage.xml not found"
+          mkdir -p Coverage
+          cp $(find ./TestResults -name coverage.cobertura.xml) Coverage/coverage.xml
 
-      - name: List coverage files
+      - name: Show coverage report summary
         run: |
           ls -la Coverage
-          head -30 Coverage/coverage.xml
+          head -40 Coverage/coverage.xml
 
       - name: End SonarCloud analysis
         run: dotnet sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
