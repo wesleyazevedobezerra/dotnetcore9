@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "s9tJdKiEhx0p6AeAoF6fMjY/aHtTK4RLxnxzGm/B3chQhKQHMhXPi/gWG2ur0BCMZSlBcxVdX+NN8IWjiZAvNw==",
+  "dgSpecHash": "T2FbOA/K9T/BT2CwsnpSErEQpq5ZqOSyKv5s0dgIksuUiBC19Jhdp1JshB3x5HWVFfOolQDPY83bxZHDrXBvaQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\wesley.bezerra\\Desktop\\Estudos\\NestJS_DotNet_Golang_Python\\todo_dotnet\\todo_dotnet_core9.Domain\\todo_dotnet_core9.Domain.csproj",
+  "projectFilePath": "/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Domain/todo_dotnet_core9.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

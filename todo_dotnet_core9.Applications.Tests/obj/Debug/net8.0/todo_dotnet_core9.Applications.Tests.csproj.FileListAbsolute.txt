@@ -1,7 +1,4 @@
 /mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Applications.Tests/bin/Debug/net8.0/CoverletSourceRootsMapping_todo_dotnet_core9.Applications.Tests
-/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Applications.Tests/bin/Debug/net8.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
-/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Applications.Tests/bin/Debug/net8.0/xunit.runner.reporters.netcoreapp10.dll
-/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Applications.Tests/bin/Debug/net8.0/xunit.runner.utility.netcoreapp10.dll
 /mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Applications.Tests/bin/Debug/net8.0/todo_dotnet_core9.Applications.Tests.deps.json
 /mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Applications.Tests/bin/Debug/net8.0/todo_dotnet_core9.Applications.Tests.runtimeconfig.json
 /mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Applications.Tests/bin/Debug/net8.0/todo_dotnet_core9.Applications.Tests.dll
@@ -103,3 +100,9 @@
 /mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Applications.Tests/obj/Debug/net8.0/todo_dotnet_core9.Applications.Tests.pdb
 /mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Applications.Tests/obj/Debug/net8.0/todo_dotnet_core9.Applications.Tests.genruntimeconfig.cache
 /mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Applications.Tests/obj/Debug/net8.0/ref/todo_dotnet_core9.Applications.Tests.dll
+/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Applications.Tests/bin/Debug/net8.0/xunit.runner.visualstudio.testadapter.dll
+/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Applications.Tests/bin/Debug/net8.0/Castle.Core.dll
+/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Applications.Tests/bin/Debug/net8.0/Moq.dll
+/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Applications.Tests/bin/Debug/net8.0/System.Diagnostics.EventLog.dll
+/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Applications.Tests/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Diagnostics.EventLog.Messages.dll
+/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Applications.Tests/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Diagnostics.EventLog.dll
