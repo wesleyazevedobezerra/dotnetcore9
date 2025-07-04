@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using todo_dotnet_core9.Applications.Interfaces;
 using todo_dotnet_core9.Applications.Models;
 
@@ -8,6 +9,7 @@ namespace todo_dotnet_core9.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class TaskController : ControllerBase
     {
         private readonly ITaskAppService _service;

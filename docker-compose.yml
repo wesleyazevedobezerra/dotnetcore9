@@ -1,32 +1,41 @@
-version: '3'
+version: "3.8"
 
 services:
-  sonarqube:
-    image: sonarqube:latest
-    container_name: sonarqube
-    depends_on:
-      - db
+  my-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: todo_dotnet_core9.api
     ports:
-      - "9000:9000"
-    environment:
-      SONAR_JDBC_URL: jdbc:postgresql://db:5432/sonarqube
-      SONAR_JDBC_USERNAME: sonar
-      SONAR_JDBC_PASSWORD: sonar
+      - "8080:8080"
     volumes:
-      - sonarqube_data:/opt/sonarqube/data
-      - sonarqube_extensions:/opt/sonarqube/extensions
+      - ./data:/app/data   # <--- adiciona este volume
+    networks:
+      - mynw
 
-  db:
-    image: postgres:13
-    container_name: sonarqube_postgres
-    environment:
-      POSTGRES_USER: sonar
-      POSTGRES_PASSWORD: sonar
-      POSTGRES_DB: sonarqube
+  prometheus:
+    image: prom/prometheus
+    ports:
+      - "9090:9090"
     volumes:
-      - postgresql:/var/lib/postgresql
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
+    command:
+      - "--config.file=/etc/prometheus/prometheus.yml"
+    networks:
+      - mynw
 
-volumes:
-  sonarqube_data:
-  sonarqube_extensions:
-  postgresql:
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "3002:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - ./grafana:/var/lib/grafana
+    depends_on:
+      - prometheus
+    networks:
+      - mynw
+
+networks:
+  mynw:

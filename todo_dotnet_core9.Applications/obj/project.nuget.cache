@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Lrh9OxUbKkMisUXw5AfVkLVnNXvVzJgMcOptv2n2m6qQZkXR4d3NApHNC2uqXczP7sRyP0htVTrxxG6VwAznfw==",
+  "dgSpecHash": "2PgfLMixgTFPEPNyTmcgbRmC0S0hWfn9xz4FyBJ0c0kCNPp5SJnGls1qQ2x/Drj7bcA5WaYtPPzSWNbxrzFruw==",
   "success": true,
-  "projectFilePath": "/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python_PHP/todo_dotnet_core9/todo_dotnet_core9.Applications/todo_dotnet_core9.Applications.csproj",
+  "projectFilePath": "/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Applications/todo_dotnet_core9.Applications.csproj",
   "expectedPackageFiles": [
     "/home/wesleyab/.nuget/packages/fastmapper.netcore/1.0.0/fastmapper.netcore.1.0.0.nupkg.sha512",
     "/home/wesleyab/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",

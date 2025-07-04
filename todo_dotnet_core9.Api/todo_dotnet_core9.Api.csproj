@@ -1,22 +1,30 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <InvariantGlobalization>true</InvariantGlobalization>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<InvariantGlobalization>true</InvariantGlobalization>
+	</PropertyGroup>
 
-  <ItemGroup>
-	  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.1" />
-	  <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.1" />
-	  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.1" />
-	  <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.1" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
-  </ItemGroup>
+	<ItemGroup>
+		<!-- Tudo atualizado para ser compatível com o .NET 8 -->
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.17" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.5" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.5" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.5">
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.5">
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+		<PackageReference Include="prometheus-net.AspNetCore" Version="8.2.1" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.0.0" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\todo_dotnet_core9.Infra\todo_dotnet_core9.Infra.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\todo_dotnet_core9.Infra\todo_dotnet_core9.Infra.csproj" />
+	</ItemGroup>
 
 </Project>

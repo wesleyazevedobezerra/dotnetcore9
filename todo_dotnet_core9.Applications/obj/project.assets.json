@@ -757,11 +757,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python_PHP/todo_dotnet_core9/todo_dotnet_core9.Applications/todo_dotnet_core9.Applications.csproj",
+      "projectUniqueName": "/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Applications/todo_dotnet_core9.Applications.csproj",
       "projectName": "todo_dotnet_core9.Applications",
-      "projectPath": "/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python_PHP/todo_dotnet_core9/todo_dotnet_core9.Applications/todo_dotnet_core9.Applications.csproj",
+      "projectPath": "/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Applications/todo_dotnet_core9.Applications.csproj",
       "packagesPath": "/home/wesleyab/.nuget/packages/",
-      "outputPath": "/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python_PHP/todo_dotnet_core9/todo_dotnet_core9.Applications/obj/",
+      "outputPath": "/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Applications/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/wesleyab/.nuget/NuGet/NuGet.Config"
@@ -776,8 +776,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python_PHP/todo_dotnet_core9/todo_dotnet_core9.Domain/todo_dotnet_core9.Domain.csproj": {
-              "projectPath": "/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python_PHP/todo_dotnet_core9/todo_dotnet_core9.Domain/todo_dotnet_core9.Domain.csproj"
+            "/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Domain/todo_dotnet_core9.Domain.csproj": {
+              "projectPath": "/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Domain/todo_dotnet_core9.Domain.csproj"
             }
           }
         }
@@ -813,7 +813,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.115/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.117/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vMYlKAmcp4/I9SJkafRPZxsktvBw/UMzqAWdVOPeY8Hb/unmgJoA0wa/VtXzG4xE2F7UeIkTZo3YWc3cJLufrA==",
+  "dgSpecHash": "sp5bIZo46I7auT29rtxFPoJ5662iY3+dWKhmGpH2wSaqnew+kv9QtbjuW8KOn+awsxNYlFyeeDyvT/+0odUH9w==",
   "success": true,
-  "projectFilePath": "/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python_PHP/todo_dotnet_core9/todo_dotnet_core9.Infra/todo_dotnet_core9.Infra.csproj",
+  "projectFilePath": "/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Infra/todo_dotnet_core9.Infra.csproj",
   "expectedPackageFiles": [
     "/home/wesleyab/.nuget/packages/fastmapper.netcore/1.0.0/fastmapper.netcore.1.0.0.nupkg.sha512",
     "/home/wesleyab/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
