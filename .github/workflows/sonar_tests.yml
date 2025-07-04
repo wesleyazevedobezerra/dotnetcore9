@@ -39,12 +39,11 @@ jobs:
         run: dotnet build --no-incremental
 
       - name: Run tests and collect coverage
-        run: dotnet test todo_dotnet_core9.Applications.Tests --collect:"XPlat Code Coverage"
-
-      - name: Copy coverage report to Coverage folder
         run: |
-          mkdir -p Coverage
-          cp $(find ./TestResults -name coverage.cobertura.xml) Coverage/coverage.xml
+          dotnet test todo_dotnet_core9.Applications.Tests \
+            /p:CollectCoverage=true \
+            /p:CoverletOutput=./Coverage/coverage.xml \
+            /p:CoverletOutputFormat=cobertura
 
       - name: Show coverage report summary
         run: |
