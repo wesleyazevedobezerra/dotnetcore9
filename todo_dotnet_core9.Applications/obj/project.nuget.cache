@@ -1,20 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "2PgfLMixgTFPEPNyTmcgbRmC0S0hWfn9xz4FyBJ0c0kCNPp5SJnGls1qQ2x/Drj7bcA5WaYtPPzSWNbxrzFruw==",
+  "dgSpecHash": "eDWsFp0+SGO1VQ145nZdSkTsH5Efo/2P6oy9B0YTIaL6BHdFbea/vNtPVTs5pM2UzjdOEU1rqjQ+jgPHZn+AgA==",
   "success": true,
-  "projectFilePath": "/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Applications/todo_dotnet_core9.Applications.csproj",
+  "projectFilePath": "C:\\Users\\wesley.bezerra\\Desktop\\Estudos\\NestJS_DotNet_Golang_Python\\todo_dotnet\\todo_dotnet_core9.Applications\\todo_dotnet_core9.Applications.csproj",
   "expectedPackageFiles": [
-    "/home/wesleyab/.nuget/packages/fastmapper.netcore/1.0.0/fastmapper.netcore.1.0.0.nupkg.sha512",
-    "/home/wesleyab/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "/home/wesleyab/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",
-    "/home/wesleyab/.nuget/packages/system.io/4.3.0/system.io.4.3.0.nupkg.sha512",
-    "/home/wesleyab/.nuget/packages/system.reflection/4.3.0/system.reflection.4.3.0.nupkg.sha512",
-    "/home/wesleyab/.nuget/packages/system.reflection.emit.ilgeneration/4.3.0/system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",
-    "/home/wesleyab/.nuget/packages/system.reflection.emit.lightweight/4.3.0/system.reflection.emit.lightweight.4.3.0.nupkg.sha512",
-    "/home/wesleyab/.nuget/packages/system.reflection.primitives/4.3.0/system.reflection.primitives.4.3.0.nupkg.sha512",
-    "/home/wesleyab/.nuget/packages/system.runtime/4.3.0/system.runtime.4.3.0.nupkg.sha512",
-    "/home/wesleyab/.nuget/packages/system.text.encoding/4.3.0/system.text.encoding.4.3.0.nupkg.sha512",
-    "/home/wesleyab/.nuget/packages/system.threading.tasks/4.3.0/system.threading.tasks.4.3.0.nupkg.sha512"
+    "C:\\Users\\wesley.bezerra\\.nuget\\packages\\fastmapper.netcore\\1.0.0\\fastmapper.netcore.1.0.0.nupkg.sha512",
+    "C:\\Users\\wesley.bezerra\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\wesley.bezerra\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\wesley.bezerra\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
+    "C:\\Users\\wesley.bezerra\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
+    "C:\\Users\\wesley.bezerra\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0\\system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",
+    "C:\\Users\\wesley.bezerra\\.nuget\\packages\\system.reflection.emit.lightweight\\4.3.0\\system.reflection.emit.lightweight.4.3.0.nupkg.sha512",
+    "C:\\Users\\wesley.bezerra\\.nuget\\packages\\system.reflection.primitives\\4.3.0\\system.reflection.primitives.4.3.0.nupkg.sha512",
+    "C:\\Users\\wesley.bezerra\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
+    "C:\\Users\\wesley.bezerra\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
+    "C:\\Users\\wesley.bezerra\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

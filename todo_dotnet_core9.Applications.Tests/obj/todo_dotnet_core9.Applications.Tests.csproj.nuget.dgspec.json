@@ -1,33 +1,38 @@
 {
   "format": 1,
   "restore": {
-    "/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Applications.Tests/todo_dotnet_core9.Applications.Tests.csproj": {}
+    "C:\\Users\\wesley.bezerra\\Desktop\\Estudos\\NestJS_DotNet_Golang_Python\\todo_dotnet\\todo_dotnet_core9.Applications.Tests\\todo_dotnet_core9.Applications.Tests.csproj": {}
   },
   "projects": {
-    "/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Applications.Tests/todo_dotnet_core9.Applications.Tests.csproj": {
+    "C:\\Users\\wesley.bezerra\\Desktop\\Estudos\\NestJS_DotNet_Golang_Python\\todo_dotnet\\todo_dotnet_core9.Applications.Tests\\todo_dotnet_core9.Applications.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Applications.Tests/todo_dotnet_core9.Applications.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\wesley.bezerra\\Desktop\\Estudos\\NestJS_DotNet_Golang_Python\\todo_dotnet\\todo_dotnet_core9.Applications.Tests\\todo_dotnet_core9.Applications.Tests.csproj",
         "projectName": "todo_dotnet_core9.Applications.Tests",
-        "projectPath": "/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Applications.Tests/todo_dotnet_core9.Applications.Tests.csproj",
-        "packagesPath": "/home/wesleyab/.nuget/packages/",
-        "outputPath": "/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Applications.Tests/obj/",
+        "projectPath": "C:\\Users\\wesley.bezerra\\Desktop\\Estudos\\NestJS_DotNet_Golang_Python\\todo_dotnet\\todo_dotnet_core9.Applications.Tests\\todo_dotnet_core9.Applications.Tests.csproj",
+        "packagesPath": "C:\\Users\\wesley.bezerra\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\wesley.bezerra\\Desktop\\Estudos\\NestJS_DotNet_Golang_Python\\todo_dotnet\\todo_dotnet_core9.Applications.Tests\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/home/wesleyab/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\wesley.bezerra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Applications/todo_dotnet_core9.Applications.csproj": {
-                "projectPath": "/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Applications/todo_dotnet_core9.Applications.csproj"
+              "C:\\Users\\wesley.bezerra\\Desktop\\Estudos\\NestJS_DotNet_Golang_Python\\todo_dotnet\\todo_dotnet_core9.Applications\\todo_dotnet_core9.Applications.csproj": {
+                "projectPath": "C:\\Users\\wesley.bezerra\\Desktop\\Estudos\\NestJS_DotNet_Golang_Python\\todo_dotnet\\todo_dotnet_core9.Applications\\todo_dotnet_core9.Applications.csproj"
               }
             }
           }
@@ -45,6 +50,10 @@
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.6.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.72, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -79,34 +88,39 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.117/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Applications/todo_dotnet_core9.Applications.csproj": {
+    "C:\\Users\\wesley.bezerra\\Desktop\\Estudos\\NestJS_DotNet_Golang_Python\\todo_dotnet\\todo_dotnet_core9.Applications\\todo_dotnet_core9.Applications.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Applications/todo_dotnet_core9.Applications.csproj",
+        "projectUniqueName": "C:\\Users\\wesley.bezerra\\Desktop\\Estudos\\NestJS_DotNet_Golang_Python\\todo_dotnet\\todo_dotnet_core9.Applications\\todo_dotnet_core9.Applications.csproj",
         "projectName": "todo_dotnet_core9.Applications",
-        "projectPath": "/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Applications/todo_dotnet_core9.Applications.csproj",
-        "packagesPath": "/home/wesleyab/.nuget/packages/",
-        "outputPath": "/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Applications/obj/",
+        "projectPath": "C:\\Users\\wesley.bezerra\\Desktop\\Estudos\\NestJS_DotNet_Golang_Python\\todo_dotnet\\todo_dotnet_core9.Applications\\todo_dotnet_core9.Applications.csproj",
+        "packagesPath": "C:\\Users\\wesley.bezerra\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\wesley.bezerra\\Desktop\\Estudos\\NestJS_DotNet_Golang_Python\\todo_dotnet\\todo_dotnet_core9.Applications\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/home/wesleyab/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\wesley.bezerra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Domain/todo_dotnet_core9.Domain.csproj": {
-                "projectPath": "/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Domain/todo_dotnet_core9.Domain.csproj"
+              "C:\\Users\\wesley.bezerra\\Desktop\\Estudos\\NestJS_DotNet_Golang_Python\\todo_dotnet\\todo_dotnet_core9.Domain\\todo_dotnet_core9.Domain.csproj": {
+                "projectPath": "C:\\Users\\wesley.bezerra\\Desktop\\Estudos\\NestJS_DotNet_Golang_Python\\todo_dotnet\\todo_dotnet_core9.Domain\\todo_dotnet_core9.Domain.csproj"
               }
             }
           }
@@ -142,26 +156,31 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.117/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Domain/todo_dotnet_core9.Domain.csproj": {
+    "C:\\Users\\wesley.bezerra\\Desktop\\Estudos\\NestJS_DotNet_Golang_Python\\todo_dotnet\\todo_dotnet_core9.Domain\\todo_dotnet_core9.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Domain/todo_dotnet_core9.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\wesley.bezerra\\Desktop\\Estudos\\NestJS_DotNet_Golang_Python\\todo_dotnet\\todo_dotnet_core9.Domain\\todo_dotnet_core9.Domain.csproj",
         "projectName": "todo_dotnet_core9.Domain",
-        "projectPath": "/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Domain/todo_dotnet_core9.Domain.csproj",
-        "packagesPath": "/home/wesleyab/.nuget/packages/",
-        "outputPath": "/mnt/c/Users/wesley.bezerra/Desktop/Estudos/NestJS_DotNet_Golang_Python/todo_dotnet/todo_dotnet_core9.Domain/obj/",
+        "projectPath": "C:\\Users\\wesley.bezerra\\Desktop\\Estudos\\NestJS_DotNet_Golang_Python\\todo_dotnet\\todo_dotnet_core9.Domain\\todo_dotnet_core9.Domain.csproj",
+        "packagesPath": "C:\\Users\\wesley.bezerra\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\wesley.bezerra\\Desktop\\Estudos\\NestJS_DotNet_Golang_Python\\todo_dotnet\\todo_dotnet_core9.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/home/wesleyab/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\wesley.bezerra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -195,7 +214,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.117/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
