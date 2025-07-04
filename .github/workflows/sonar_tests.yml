@@ -12,29 +12,30 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: 8.0.x
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
 
-    - name: Install SonarScanner
-      run: dotnet tool install --global dotnet-sonarscanner
+      - name: Install SonarScanner
+        run: dotnet tool install --global dotnet-sonarscanner
 
-    - name: Begin SonarCloud analysis
-      run: |
-        dotnet sonarscanner begin \
-          /k:"wesleyazevedobezerra_CadastroApi" \
-          /o:"wesleyazevedobezerra" \
-          /d:sonar.login="${{ secrets.SONAR_TOKEN }}" \
-          /d:sonar.cs.opencover.reportsPaths="**/coverage.cobertura.xml"
+      - name: Begin SonarCloud analysis
+        run: |
+          dotnet sonarscanner begin \
+            /k:"wesleyazevedobezerra_CadastroApi" \
+            /o:"wesleyazevedobezerra" \
+            /d:sonar.login="${{ secrets.SONAR_TOKEN }}" \
+            /d:sonar.host.url="https://sonarcloud.io" \
+            /d:sonar.cs.cobertura.reportsPaths="**/coverage.cobertura.xml"
 
-    - name: Build
-      run: dotnet build --no-incremental
+      - name: Build
+        run: dotnet build --no-incremental
 
-    - name: Test with coverage
-      run: dotnet test todo_dotnet_core9.Applications.Tests --collect:"XPlat Code Coverage"
+      - name: Test with coverage
+        run: dotnet test todo_dotnet_core9.Applications.Tests --collect:"XPlat Code Coverage"
 
-    - name: End SonarCloud analysis
-      run: dotnet sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
+      - name: End SonarCloud analysis
+        run: dotnet sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
