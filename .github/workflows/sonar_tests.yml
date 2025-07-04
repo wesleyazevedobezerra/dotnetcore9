@@ -35,12 +35,11 @@ jobs:
         run: dotnet build --no-incremental
 
       - name: Test with coverage
-        run: dotnet test todo_dotnet_core9.Applications.Tests --collect:"XPlat Code Coverage"
-
-      - name: Copy coverage file
         run: |
-          mkdir -p Coverage
-          cp $(find . -type f -name 'coverage.cobertura.xml') Coverage/coverage.cobertura.xml
+          dotnet test todo_dotnet_core9.Applications.Tests \
+            /p:CollectCoverage=true \
+            /p:CoverletOutput=./Coverage/ \
+            /p:CoverletOutputFormat=cobertura
 
       - name: End SonarCloud analysis
         run: dotnet sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
