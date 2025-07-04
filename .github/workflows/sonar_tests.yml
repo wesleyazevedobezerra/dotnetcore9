@@ -38,8 +38,11 @@ jobs:
         run: |
           dotnet test todo_dotnet_core9.Applications.Tests \
             /p:CollectCoverage=true \
-            /p:CoverletOutput=./Coverage/ \
+            /p:CoverletOutput=$(pwd)/Coverage/ \
             /p:CoverletOutputFormat=cobertura
+
+      - name: Show coverage files
+        run: ls -la Coverage
 
       - name: End SonarCloud analysis
         run: dotnet sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
