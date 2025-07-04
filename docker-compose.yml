@@ -9,7 +9,7 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - ./data:/app/data   # <--- adiciona este volume
+      - ./data:/app/data # <--- adiciona este volume
     networks:
       - mynw
 
@@ -28,8 +28,6 @@ services:
     image: grafana/grafana
     ports:
       - "3002:3000"
-    environment:
-      - GF_SECURITY_ADMIN_PASSWORD=admin
     volumes:
       - ./grafana:/var/lib/grafana
     depends_on:
