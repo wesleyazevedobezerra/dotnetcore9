@@ -36,9 +36,10 @@ jobs:
 
       - name: Test with coverage
         run: |
+          mkdir -p Coverage
           dotnet test todo_dotnet_core9.Applications.Tests \
             /p:CollectCoverage=true \
-            /p:CoverletOutput=$(pwd)/Coverage/ \
+            /p:CoverletOutput=Coverage/coverage \
             /p:CoverletOutputFormat=cobertura
 
       - name: Show coverage files
