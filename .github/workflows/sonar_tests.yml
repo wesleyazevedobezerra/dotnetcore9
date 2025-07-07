@@ -26,29 +26,13 @@ jobs:
       - name: Add dotnet tools to PATH
         run: echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
 
-      - name: Begin SonarCloud analysis
-        run: |
-          dotnet sonarscanner begin \
-            /k:"wesleyazevedobezerra_CadastroApi" \
-            /o:"wesleyazevedobezerra" \
-            /d:sonar.login="${{ secrets.SONAR_TOKEN }}" \
-            /d:sonar.host.url="https://sonarcloud.io" \
-            /d:sonar.cs.opencover.reportsPaths="Coverage/coverage.xml"
-
-      - name: Build solution
-        run: dotnet build --no-incremental
-
       - name: Run tests and collect coverage
         run: |
+          mkdir -p Coverage
           dotnet test todo_dotnet_core9.Applications.Tests \
             /p:CollectCoverage=true \
-            /p:CoverletOutput=./Coverage/coverage.xml \
+            /p:CoverletOutput=./Coverage/ \
             /p:CoverletOutputFormat=opencover
-
-      - name: Show coverage report summary
-        run: |
-          ls -la Coverage
-          head -40 Coverage/coverage.xml
 
       - name: End SonarCloud analysis
         run: dotnet sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
