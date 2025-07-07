@@ -12,6 +12,12 @@ namespace todo_dotnet_core9.Applications.Tests.Services
 {
     public class TaskAppServiceTests
     {
+
+// dotnet test todo_dotnet_core9.Applications.Tests --collect:"XPlat Code Coverage" && \
+// reportgenerator -reports:"todo_dotnet_core9.Applications.Tests/TestResults/**/coverage.cobertura.xml" -targetdir:"coveragereport" -reporttypes:Html && \
+// xdg-open coveragereport/index.html
+
+
         private readonly Mock<ITaskRepository> _repositoryMock;
         private readonly TaskAppService _service;
 

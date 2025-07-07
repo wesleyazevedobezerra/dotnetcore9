@@ -43,7 +43,7 @@ jobs:
           dotnet test todo_dotnet_core9.Applications.Tests \
             /p:CollectCoverage=true \
             /p:CoverletOutput=./Coverage/coverage.xml \
-            /p:CoverletOutputFormat=cobertura
+            /p:CoverletOutputFormat=opencover
 
       - name: Show coverage report summary
         run: |
