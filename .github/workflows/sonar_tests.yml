@@ -43,7 +43,7 @@ jobs:
           mkdir -p Coverage
           dotnet test todo_dotnet_core9.Applications.Tests \
             /p:CollectCoverage=true \
-            /p:CoverletOutput=./Coverage/ \
+            /p:CoverletOutput=./Coverage/coverage.opencover.xml \
             /p:CoverletOutputFormat=opencover
 
       - name: List coverage file
