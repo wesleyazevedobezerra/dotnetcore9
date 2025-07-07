@@ -33,7 +33,7 @@ jobs:
             /o:"wesleyazevedobezerra" \
             /d:sonar.login="${{ secrets.SONAR_TOKEN }}" \
             /d:sonar.host.url="https://sonarcloud.io" \
-            /d:sonar.cs.opencover.reportsPaths="Coverage/coverage.opencover.xml"
+            /d:sonar.cs.cobertura.reportsPaths="Coverage/coverage.cobertura.xml"
 
       - name: Build solution
         run: dotnet build --no-incremental
@@ -43,11 +43,12 @@ jobs:
           mkdir -p Coverage
           dotnet test todo_dotnet_core9.Applications.Tests \
             /p:CollectCoverage=true \
-            /p:CoverletOutput=./Coverage/coverage.opencover.xml \
-            /p:CoverletOutputFormat=opencover
+            /p:CoverletOutput=./Coverage/ \
+            /p:MergeWith="" \
+            /p:CoverletOutputFormat=cobertura
 
       - name: List coverage file
-        run: ls -la Coverage && head -40 Coverage/coverage.opencover.xml
+        run: ls -la Coverage && head -40 Coverage/coverage.cobertura.xml
 
       - name: End SonarCloud analysis
         run: dotnet sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
